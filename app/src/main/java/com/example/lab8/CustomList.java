@@ -65,10 +65,10 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     /**
-     * this checks if the city is in the list
-     * @param cityName
-     * @return
-     */
+    * this checks if the city is in the list
+    * @param cityName
+    * @return
+    */
 
     public boolean hasCity(String cityName){
         for(City city : cities){
@@ -80,10 +80,10 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     /**
-     * this deletes a city from the list
-     * @param cityName
-     * @return
-     */
+    * this deletes a city from the list
+    * @param cityName
+    * @return
+    */
 
     public boolean deleteCity(String cityName){
         for(City city : cities){
@@ -94,5 +94,22 @@ public class CustomList extends ArrayAdapter<City> {
         }
         return false;
     }
+
+    /**
+    * this counts the number of cities in the list
+    * @param cityName
+    * @return
+    */
+
+    public int countCities(String cityName){
+        int count = 0;
+        for(City city : cities){
+            if(city.getCityName().equals(cityName)){
+                count++;
+            }
+        }
+        return count;
+    }
+
 
 }
