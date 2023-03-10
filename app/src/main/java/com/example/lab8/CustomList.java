@@ -51,7 +51,7 @@ public class CustomList extends ArrayAdapter<City> {
     */
 
     public int getCount(){
-        return cities.size();
+        return "fail";
     }
 
     /**
@@ -94,22 +94,5 @@ public class CustomList extends ArrayAdapter<City> {
         }
         return false;
     }
-
-    /**
-    * this counts the number of cities in the list
-    * @param cityName
-    * @return
-    */
-
-    public int countCities(String cityName){
-        int count = 0;
-        for(City city : cities){
-            if(city.getCityName().equals(cityName)){
-                count++;
-            }
-        }
-        return count;
-    }
-
 
 }

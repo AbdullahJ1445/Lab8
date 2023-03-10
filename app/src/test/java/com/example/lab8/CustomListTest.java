@@ -79,7 +79,7 @@ public class CustomListTest {
         list.addCity(new City("Estevan", "SK"));
         list.addCity(new City("Regina", "SK"));
         list.addCity(new City("Saskatoon", "SK"));
-        assertEquals(list.countCities("SK"), 3);
+        assertEquals(list.getCount(), 3);
     }
 
 }
