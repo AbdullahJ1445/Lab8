@@ -66,4 +66,20 @@ public class CustomListTest {
         assertEquals(list.hasCity("Estevan"), false);
     }
 
+    /**
+    * count cities test
+    * check if the city is in the list
+    * if it is, return the number of cities
+    * if it is not, return 0
+    */
+
+    @Test
+    public void countCitiesTest(){
+        list = MockCityList();
+        list.addCity(new City("Estevan", "SK"));
+        list.addCity(new City("Regina", "SK"));
+        list.addCity(new City("Saskatoon", "SK"));
+        assertEquals(list.countCities("SK"), 3);
+    }
+
 }
